@@ -1,0 +1,115 @@
+spriteTypes = {	
+    SpriteType = {
+		name = "GFX_focus_eritrea_governate"
+		texturefile = "gfx/interface/goals/utopia/focus_eritrea_governate.dds"
+	}		
+	SpriteType = {
+		name = "GFX_focus_galla_harar"
+		texturefile = "gfx/interface/goals/utopia/focus_galla_harar.dds"
+	}
+    SpriteType = {
+		name = "GFX_focus_scioa_amara"
+		texturefile = "gfx/interface/goals/utopia/focus_scioa_amara.dds"
+	}
+    SpriteType = {
+		name = "GFX_focus_somali_governate"
+		texturefile = "gfx/interface/goals/utopia/focus_somali_governate.dds"
+	}	
+    SpriteType = {
+		name = "GFX_focus_aristocrats"
+		texturefile = "gfx/interface/goals/utopia/aristocrats.tga"
+	}	
+	SpriteType = {
+		name = "GFX_focus_GER_abwehr"
+		texturefile = "gfx/interface/goals/utopia/focus_GER_abwehr.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_autarky"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_autarky_ambitions.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_kdf_wagen"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_kdf_wagen.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_four_year_plan"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_the_four_year_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_handle_romania"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_subjugate_romanian_economy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_organisation_todt"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_optimize_reich_labour_service.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_anschluss"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_the_austrian_question.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_end_of_czechoslovakia"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_fate_of_czechoslovakia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_fate_of_greece"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_fate_of_greece.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_fate_of_yugoslavia"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_fate_of_yugoslavia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_reintegrate_eastern_territories"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_reinstate_imperial_possessions.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_reintegrate_luxemburg_and_alsace_lorraine"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_restore_eastern_imperial_possessions.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_integrate_war_economies"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_integrated_economies.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_hermann_goring_werke"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_prioritize_the_four_year_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_krupp_cooperate"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_krupp.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_befriend_hungary"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_generic_befriend_hungary.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_rheinmetall"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_rheinmetall.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_mass_production"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_generic_mass_production.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_subsidize_hoesch_benzin"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_subsidize_hoesch_benzin.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IG_Farben"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_IG_Farben.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_Buna"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_GER_Buna.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_coal_mining"
+		texturefile = "gfx/interface/goals/utopia/DLC/focus_generic_coal_mining.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_GER_skoda_werke"
+		texturefile = "gfx/interface/goals/utopia/focus_GER_Skoda.dds"
+	}
+
+}
