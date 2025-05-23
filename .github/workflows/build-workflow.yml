@@ -30,6 +30,12 @@ jobs:
       - name: Install dependencies
         run: dotnet restore
 
+      - name: Setup Nuget
+        uses: Nuget/setup-nuget@v2.0.1
+      
+      - name: Restore nuget packages
+        run: nuget restore HOI4ModTools\HOI4ModTools.sln
+
       - name: Build
         #run: dotnet build --configuration Release --results-directory "TestResults-${{ env.DOTNET_VERSION }}" --artifacts-path "artifact-${{ env.DOTNET_VERSION }}" --no-restore
         run: dotnet build --configuration Release --artifacts-path "artifact-${{ env.DOTNET_VERSION }}" --no-restore
