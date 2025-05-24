@@ -12,5 +12,6 @@ Global
 		{FC09E842-A38C-4262-BF36-798ADE512460}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC09E842-A38C-4262-BF36-798ADE512460}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC09E842-A38C-4262-BF36-798ADE512460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC09E842-A38C-4262-BF36-798ADE512460}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
