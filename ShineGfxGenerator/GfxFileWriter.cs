@@ -28,9 +28,7 @@ public static class GfxFileWriter
         }
         
         //Create absolute path for output directory
-        var uri = new Uri(outputFilePath, UriKind.RelativeOrAbsolute);
-        if (!uri.IsAbsoluteUri) uri = new Uri(Path.Combine(Environment.CurrentDirectory, outputFilePath));
-        outputFilePath = uri.AbsolutePath;
+        outputFilePath = FileIoUtility.GetAbsolutePath(outputFilePath);
         
         //Check if it's a valid directory
         var fileDirectory = Path.GetDirectoryName(outputFilePath);

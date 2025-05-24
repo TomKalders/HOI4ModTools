@@ -28,9 +28,8 @@ public static partial class GfxFileReader
         }
         
         //Check file path
-        var uri = new Uri(gfxFilePath, UriKind.RelativeOrAbsolute);
-        if (!uri.IsAbsoluteUri) uri = new Uri(Path.Combine(Environment.CurrentDirectory, gfxFilePath));
-        if (!File.Exists(uri.AbsolutePath))
+        gfxFilePath = FileIoUtility.GetAbsolutePath(gfxFilePath);
+        if (!File.Exists(gfxFilePath))
         {
             error = $"Failed to find gfx file at path '{gfxFilePath}'";
             return false;
