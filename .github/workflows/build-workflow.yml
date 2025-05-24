@@ -35,3 +35,32 @@ jobs:
         with:
           name: dotnet-build-${{ env.DOTNET_VERSION }}
           path: artifact-${{ env.DOTNET_VERSION }}
+          
+  release:
+    name: release-windows-latest
+    runs-on: windows-latest
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
+    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v2
+        
+      - name: Create release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ShineGfxGenerator-${{ github.ref }}
+          draft: false
+          prerelease: true
+          
+      - name: Upload release assets
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          asset_content_type: application/zip
+          asset_name: ShineGfxGenerator-release-${{ github.ref }}
+          asset_path: artifact-${{ env.DOTNET_VERSION }}
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
