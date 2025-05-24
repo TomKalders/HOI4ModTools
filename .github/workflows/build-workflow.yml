@@ -14,11 +14,8 @@ env:
 jobs:
   build:
 
-    name: build-${{matrix.os}}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [windows-latest]
+    name: build-windows-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v4
@@ -31,15 +28,7 @@ jobs:
         run: dotnet restore
 
       - name: Build
-        #run: dotnet build --configuration Release --results-directory "TestResults-${{ env.DOTNET_VERSION }}" --artifacts-path "artifact-${{ env.DOTNET_VERSION }}" --no-restore
-        #run: dotnet build --configuration Release --artifacts-path "artifact-${{ env.DOTNET_VERSION }}" --no-restore
         run: dotnet build --configuration Release --artifacts-path "artifact-${{ env.DOTNET_VERSION }}"
-
-#      - name: Upload build test result
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: dotnet-results-${{ env.DOTNET_VERSION }}
-#          path: TestResults-${{ env.DOTNET_VERSION }}
           
       - name: upload build artifact
         uses: actions/upload-artifact@v4
