@@ -29,7 +29,7 @@ jobs:
 
       - name: Build
         #run: dotnet build --configuration Release --artifacts-path "artifact-${{ env.DOTNET_VERSION }}"
-        run: dotnet build --configuration Release --output "artifact-${{ env.DOTNET_VERSION }}"
+        run: dotnet publish --configuration Release --output "artifact-${{ env.DOTNET_VERSION }}" --self-contained
           
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
