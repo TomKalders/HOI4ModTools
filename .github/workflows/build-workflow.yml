@@ -28,12 +28,13 @@ jobs:
         run: dotnet restore
 
       - name: Build
-        run: dotnet build --configuration Release --artifacts-path "artifact-${{ env.DOTNET_VERSION }}"
+        #run: dotnet build --configuration Release --artifacts-path "artifact-${{ env.DOTNET_VERSION }}"
+        run: dotnet build --configuration Release --output "artifact-${{ env.DOTNET_VERSION }}"
           
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: dotnet-build-${{ env.DOTNET_VERSION }}
+          name: artifact-${{ env.DOTNET_VERSION }}
           path: artifact-${{ env.DOTNET_VERSION }}
           
   release:
