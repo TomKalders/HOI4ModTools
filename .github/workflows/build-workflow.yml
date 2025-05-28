@@ -70,5 +70,5 @@ jobs:
         with:
           asset_content_type: application/zip
           asset_name: ShineGfxGenerator-release-${{ github.ref }}
-          asset_path: artifact-${{ env.DOTNET_VERSION }}
+          asset_path: artifact.zip
           upload_url: ${{ steps.create_release.outputs.upload_url }}
