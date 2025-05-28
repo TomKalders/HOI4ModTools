@@ -1,3 +1,5 @@
+[![build](https://github.com/TomKalders/HOI4ModTools/actions/workflows/build-workflow.yml/badge.svg)](https://github.com/TomKalders/HOI4ModTools/actions/workflows/build-workflow.yml)
+
 # Hearts of Iron 4 Modding Tools
 
 This repo has some very simple tools to use in HOI4 modding.
