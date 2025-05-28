@@ -69,6 +69,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           asset_content_type: application/zip
-          asset_name: ShineGfxGenerator-release-${{ github.ref_name }}
+          asset_name: ShineGfxGenerator-release-${{ github.ref_name }}.zip
           asset_path: artifact.zip
           upload_url: ${{ steps.create_release.outputs.upload_url }}
